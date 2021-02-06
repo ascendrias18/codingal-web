@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">  <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="./css/all.css">
+
+
+    <!-- --------- Owl-Carousel ------------------->
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+
+    <!-- ------------ AOS Library ------------------------- -->
+    <link rel="stylesheet" href="./css/aos.css">
+
+    <!-- Custom Style   -->
+    <link rel="stylesheet" href="./css/Style1.css">
+    <link rel="icon"href="C:\Users\DB0186AU\Desktop\codingal\LOGO WEB.png"type="image/png"sizes="32
+    *32">
+
+    <title>donation.com:FILL UP THE FORM</title> <style>/* Style inputs with type="text", select elements and textareas */
+        input[type=text], select, textarea {
+          width: 100%; /* Full width */
+          padding: 12px; /* Some padding */ 
+          border: 1px solid #ccc; /* Gray border */
+          border-radius: 4px; /* Rounded borders */
+          box-sizing: border-box; /* Make sure that padding and width stays in place */
+          margin-top: 6px; /* Add a top margin */
+          margin-bottom: 16px; /* Bottom margin */
+          resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+        }
+        
+        input[type=number], select, textarea {
+          width: 100%; /* Full width */
+          padding: 12px; /* Some padding */ 
+          border: 1px solid #ccc; /* Gray border */
+          border-radius: 4px; /* Rounded borders */
+          box-sizing: border-box; /* Make sure that padding and width stays in place */
+          margin-top: 6px; /* Add a top margin */
+          margin-bottom: 16px; /* Bottom margin */
+          resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+        }
+        * Style the submit button with a specific background color etc */
+        input[type=submit] {
+            background-color: #4CAF50;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        }
+        
+        /* When moving the mouse over the submit button, add a darker green color */
+        input[type=submit]:hover {
+          background-color: #45a049;
+        }
+        
+        /* Add a background color and some padding around the form */
+        .container {
+          border-radius: 5px;
+          background-color: #f2f2f2;
+          padding: 20px;
+        }
+        h1{
+            text-align: center;
+        }
+        .btn{background-color:hsl(184, 85%, 35%);
+    border-radius:50px ;
+    font-size: 30px;}
+
+    .btn0{background-color:hsl(234, 85%, 35%);
+    border-radius:50px ;
+    font-size: 30px;}
+    .btn:hover{
+    background-color:thistle;
+  }
+  .btn0:hover{
+    background-color:lightcyan;
+  }
+        </style>
+</head>
+<body>
+    <div id="loader" class="center"></div>
+    <nav class="nav">
+    <div class="nav-menu flex-row">
+        <div class="nav-brand">
+       <img src="LOGO WEB.png" width="209">         </div>
+        <div class="toggle-collapse">
+            <div class="toggle-icons">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+        <div>
+            <ul class="nav-items">
+                <li class="nav-link">
+                    <a href="codingal.html">Home</a>
+                </li>
+                <li class="nav-link">
+                    <a href="codingal.html#category">Category</a>
+                </li>
+                <li class="nav-link">
+                    <a href="#">Blogs</a>
+                </li>
+                <li class="nav-link">
+                    <a href="#">Donations</a>
+                </li>
+                <li class="nav-link">
+                    <a href="#">Our Works</a>
+                </li>
+                <li class="nav-link">
+                    <a href="contactus.html">Contact Us</a>
+                </li>
+                <a href="donatenow.html">
+                <button class="btn2">DONATE NOW</button></a>
+            </ul>
+        </div>
+        <div class="social text-gray">
+            <a href="#"><i class="fab fa-facebook-square"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-telegram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+   </div>       
+    
+    
+</nav>
+<div class="container">
+    <h1>DONATION FORM</h1>
+    <form action="submit1.html"
+    required>
+  
+      <label for="fname">First Name</label>
+      <input type="text" id="fname" name="firstname" placeholder="Your name..">
+  
+      <label for="lname">Last Name</label>
+      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+      <label for="">EMAIL-ID</label>
+      <input type="text" id="lname" name="lastname" placeholder="ENTER YOUR EMAIL-ID ">
+   
+      <label for="country">WHAT DO YOU WANT TO DONATE?</label>
+      <select id="country" name="DONATION">
+        <option value="australia">"DONATE"</option>
+        <option value="canada">BOOKS</option>
+        <option value="usa">FOOD</option>
+        <option value="usa">CLOTHES</option>
+        <option value="usa">CASH</option>
+      </select>  <label for="">PLEASE TELL THE AMOUNT(if cash then please state the currency.)</label>
+      <input type="text" id="lname" name="lastname" placeholder="AMOUNT ">
+     <label for="">Phone no.</label>
+      <input type="number" id="lname" name="lastname" placeholder="ENTER YOUR Phone.no ">
+      <label for="subject">Subject</label>
+      <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+      <button class="btn0">SUBMIT</button>
+      <button class="btn">ONLINE DONATION</button>
+      <script> 
+        document.onreadystatechange = function() { 
+            if (document.readyState !== "complete") { 
+                document.querySelector( 
+                  "body").style.visibility = "hidden"; 
+                document.querySelector( 
+                  "#loader").style.visibility = "visible"; 
+            } else { 
+                document.querySelector( 
+                  "#loader").style.display = "none"; 
+                document.querySelector( 
+                  "body").style.visibility = "visible"; 
+            } 
+        }; 
+    </script> 
+</body>
+</html>
